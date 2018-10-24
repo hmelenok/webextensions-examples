@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "i18n popup",
+  "description": "Displays a sidebar that lets you take notes on web pages.",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "45"
+    }
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "19": "images/i18n.png"
+    },
+    "default_popup": "build/index.html",
+    "default_title": "Open the popup"
+  },
+  "icons": {
+    "16": "icons/i18n.png",
+    "48": "icons/i18n.png",
+    "128": "icons/i18n.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
